@@ -1,5 +1,4 @@
 //Fizz Buzz
-document.write ("Java");
 function buzzFizz(){
 for (var i =0;i < Math.floor(Math.random() * 101); i++){
 	if ( i % 3 == 0 ){
