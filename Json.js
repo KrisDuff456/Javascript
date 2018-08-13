@@ -5,9 +5,9 @@ request.open('GET',requestURL);
 request.responseType = 'json';
 request.send();
 
-//request.onload;
 
-function loadJson(){
+
+request.onload = function loadJson(){
 	let requestData = request.response;
 
 	let heroHeading = document.createElement('h2');
@@ -20,7 +20,7 @@ function loadJson(){
 }
 function showHero(requestData){
 	
-	let myheroes = requestData['members'];
+	let myheroes = requestData['members'][0][1];
 		
 		for(let i = 0; i < myheroes.length;i++){
 			
